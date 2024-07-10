@@ -19,3 +19,6 @@ class MenuItem(models.Model):
   
   def __str__(self) -> str:
     return f'{self.title} : {str(self.price)}'
+  
+  def get_item(self):
+    return f'{self.title} : {str(self.price)}'
